@@ -1,0 +1,32 @@
+(node:88040) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+[32mStarting at 11/23/2024, 8:04:19 PM CST...[39m
+[31m[ ERROR ][39m loading endpoint users/meta/setPFP.js: Error: Cannot find module '../build/Release/magic'
+Require stack:
+- /mnt/extendedblock/penguinmod-backendapi/PenguinMod-BackendApi/node_modules/mmmagic/lib/index.js
+- /mnt/extendedblock/penguinmod-backendapi/PenguinMod-BackendApi/api/v1/routes/users/meta/setPFP.js
+- /mnt/extendedblock/penguinmod-backendapi/PenguinMod-BackendApi/api/endpointLoader.js
+- /mnt/extendedblock/penguinmod-backendapi/PenguinMod-BackendApi/index.js
+[31m[ ERROR ][39m loading endpoint users/mod/setPFP.js: Error: Cannot find module '../build/Release/magic'
+Require stack:
+- /mnt/extendedblock/penguinmod-backendapi/PenguinMod-BackendApi/node_modules/mmmagic/lib/index.js
+- /mnt/extendedblock/penguinmod-backendapi/PenguinMod-BackendApi/api/v1/routes/users/mod/setPFP.js
+- /mnt/extendedblock/penguinmod-backendapi/PenguinMod-BackendApi/api/endpointLoader.js
+- /mnt/extendedblock/penguinmod-backendapi/PenguinMod-BackendApi/index.js
+API is listening on port 12026
+(node:88197) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+[32mStarting at 11/23/2024, 8:04:55 PM CST...[39m
+[31m[ ERROR ][39m loading endpoint users/meta/setPFP.js: Error: Cannot find module '../build/Release/magic'
+Require stack:
+- /mnt/extendedblock/penguinmod-backendapi/PenguinMod-BackendApi/node_modules/mmmagic/lib/index.js
+- /mnt/extendedblock/penguinmod-backendapi/PenguinMod-BackendApi/api/v1/routes/users/meta/setPFP.js
+- /mnt/extendedblock/penguinmod-backendapi/PenguinMod-BackendApi/api/endpointLoader.js
+- /mnt/extendedblock/penguinmod-backendapi/PenguinMod-BackendApi/index.js
+[31m[ ERROR ][39m loading endpoint users/mod/setPFP.js: Error: Cannot find module '../build/Release/magic'
+Require stack:
+- /mnt/extendedblock/penguinmod-backendapi/PenguinMod-BackendApi/node_modules/mmmagic/lib/index.js
+- /mnt/extendedblock/penguinmod-backendapi/PenguinMod-BackendApi/api/v1/routes/users/mod/setPFP.js
+- /mnt/extendedblock/penguinmod-backendapi/PenguinMod-BackendApi/api/endpointLoader.js
+- /mnt/extendedblock/penguinmod-backendapi/PenguinMod-BackendApi/index.js
+API is listening on port 12026

