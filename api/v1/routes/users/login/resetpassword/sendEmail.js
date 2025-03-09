@@ -33,10 +33,10 @@ module.exports = (app, utils) => {
 
         const lastEmailSent = lastEmailSentID > lastEmailSendIP ? lastEmailSentID : lastEmailSendIP;
 
-        if (Date.now() - (lastEmailSent ? lastEmailSent : 0) < 1000 * 60 * 60 * 2) { // 2 hours
-            utils.error(res, 400, "Cooldown");
-            return;
-        }
+        //if (Date.now() - (lastEmailSent ? lastEmailSent : 0) < 1000 * 60 * 60 * 2) { // 2 hours
+        //    utils.error(res, 400, "Cooldown");
+        //    return;
+        //}
 
         const state = await utils.UserManager.generatePasswordResetState();
 

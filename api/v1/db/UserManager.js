@@ -3670,8 +3670,8 @@ class UserManager {
                 Messages: [
                     {
                         "From": {
-                        "Email": "no-reply@penguinmod.com",
-                        "Name": "Penguinmod"
+                        "Email": "koko@kokodev.cc",
+                        "Name": "Orangemod"
                         },
                         "To": [
                         {

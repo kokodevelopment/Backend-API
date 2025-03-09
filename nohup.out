@@ -30,3 +30,241 @@ Require stack:
 - /mnt/extendedblock/penguinmod-backendapi/PenguinMod-BackendApi/api/endpointLoader.js
 - /mnt/extendedblock/penguinmod-backendapi/PenguinMod-BackendApi/index.js
 API is listening on port 12026
+URIError: Failed to decode param '%c0'
+    at decodeURIComponent (<anonymous>)
+    at decode_param (/mnt/extendedblock/penguinmod-backendapi/PenguinMod-BackendApi/node_modules/express/lib/router/layer.js:172:12)
+    at Layer.match (/mnt/extendedblock/penguinmod-backendapi/PenguinMod-BackendApi/node_modules/express/lib/router/layer.js:148:15)
+    at matchLayer (/mnt/extendedblock/penguinmod-backendapi/PenguinMod-BackendApi/node_modules/express/lib/router/index.js:585:18)
+    at next (/mnt/extendedblock/penguinmod-backendapi/PenguinMod-BackendApi/node_modules/express/lib/router/index.js:226:15)
+    at /mnt/extendedblock/penguinmod-backendapi/PenguinMod-BackendApi/index.js:107:9
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5) {
+  statusCode: 400,
+  status: 400
+}
+mail error Error: Unsuccessful: Status Code: "401" Message: "API key authentication/authorization failure. You may be unauthorized to access the API or your API key may be expired. Visit API keys management section to check your keys."
+    at e.<anonymous> (/mnt/extendedblock/penguinmod-backendapi/PenguinMod-BackendApi/node_modules/node-mailjet/mailjet.node.js:2:13423)
+    at /mnt/extendedblock/penguinmod-backendapi/PenguinMod-BackendApi/node_modules/node-mailjet/mailjet.node.js:2:9350
+    at Object.throw (/mnt/extendedblock/penguinmod-backendapi/PenguinMod-BackendApi/node_modules/node-mailjet/mailjet.node.js:2:9455)
+    at r (/mnt/extendedblock/penguinmod-backendapi/PenguinMod-BackendApi/node_modules/node-mailjet/mailjet.node.js:2:8220)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5) {
+  code: 'ERR_BAD_REQUEST',
+  config: {
+    transitional: {
+      silentJSONParsing: true,
+      forcedJSONParsing: true,
+      clarifyTimeoutError: false
+    },
+    adapter: [ 'xhr', 'http', 'fetch' ],
+    transformRequest: [ [Function (anonymous)] ],
+    transformResponse: [Function: transformResponse],
+    timeout: 0,
+    xsrfCookieName: 'XSRF-TOKEN',
+    xsrfHeaderName: 'X-XSRF-TOKEN',
+    maxContentLength: -1,
+    maxBodyLength: -1,
+    env: { FormData: [Function], Blob: [class Blob] },
+    validateStatus: [Function: validateStatus],
+    headers: Object [AxiosHeaders] {
+      Accept: 'application/json, text/plain, */*',
+      'Content-Type': 'application/json',
+      'User-Agent': 'mailjet-api-v3-nodejs/6.0.6',
+      'Content-Length': '2737',
+      'Accept-Encoding': 'gzip, compress, deflate, br'
+    },
+    url: 'https://api.mailjet.com/v3.1/send',
+    params: {},
+    data: `{"Messages":[{"From":{"Email":"no-reply@penguinmod.com","Name":"Penguinmod"},"To":[{"Email":"koko@kokodev.cc","Name":"kokofixcomputers"}],"Subject":"Verify your email","TextPart":"PenguinMod Email Verification\\n\\n        ********************\\n        Hello kokofixcomputers!\\n        ********************\\n\\n        You are getting this email as someone has requested to set\\n        this email address as an email for the \\"kokofixcomputers\\" PenguinMod account.\\n\\n        Opening the link below will set this as the email address\\n        for the \\"kokofixcomputers\\" PenguinMod account.\\n\\n        Verify this email:\\n        https://projects.penguinmod.com/api/v1/resetpassword/verifyemail?email=koko@kokodev.cc&state=3c038a01ef25ecde2dbbbb582f9b57122e40e3c0cad18ca345ac63d384b9e396\\n\\n        If you did not request for this to be a PenguinMod account's email,\\n        you can delete this email or ignore it.\\n\\n        Do not forward, share, or reply to this email. Replies will\\n        not be seen or answered.\\n\\n        PenguinMod","HTMLPart":"<!DOCTYPE html PUBLIC \\"-//W3C//DTD HTML 4.0 Transitional//EN\\" \\"http://www.w3.org/TR/REC-html40/loose.dtd\\">\\n        <html><body>\\n        <p style='background-color: #129aeb; color: white; font-size: 48px; font-weight: bold; font-family: \\"Helvetica Neue\\", Arial, sans-serif; padding: 60px 10%;' align=\\"center\\">PenguinMod Email Verification</p>\\n            <h1 style='font-family: \\"Helvetica Neue\\", Arial, sans-serif;'>Hello kokofixcomputers!</h1>\\n            <p style='font-family: \\"Helvetica Neue\\", Arial, sans-serif;'>You are getting this email as someone has requested to set this email address as an email for the &quot;kokofixcomputers&quot; PenguinMod account.</p>\\n            <p style='font-family: \\"Helvetica Neue\\", Arial, sans-serif;'>Opening the link below will set this as the email address for the &quot;kokofixcomputers&quot; PenguinMod account.</p>\\n        <p style='font-family: \\"Helvetica Neue\\", Arial, sans-serif;'><a href=\\"https://projects.penguinmod.com/api/v1/resetpassword/verifyemail?email=koko@kokodev.cc&state=3c038a01ef25ecde2dbbbb582f9b57122e40e3c0cad18ca345ac63d384b9e396\\">Verify this email</a></p>\\n        <br>\\n        <p style='font-family: \\"Helvetica Neue\\", Arial, sans-serif;'>If you did not request for this to be a PenguinMod account's email, you can delete this email or ignore it.</p>\\n            <p style='font-family: \\"Helvetica Neue\\", Arial, sans-serif;'>Do not forward, share, or reply to this email. Replies will not be seen or answered.</p>\\n\\n        <img src=\\"https://penguinmod.com/favicon.png\\" alt=\\"PenguinMod\\" width=\\"64\\" height=\\"64\\" style=\\"width: 64px; height: 64px;\\">\\n        </body></html>"}]}`,
+    method: 'post',
+    responseType: 'json',
+    auth: { username: 'abc', password: 'def' }
+  },
+  response: {
+    status: 401,
+    statusText: 'Unauthorized',
+    headers: Object [AxiosHeaders] {
+      'content-length': '266',
+      'content-type': 'application/json; charset=UTF-8',
+      'x-mj-request-guid': 'f0c2ac32-8e6d-4ea9-b593-df987c159f2b',
+      date: 'Sun, 09 Mar 2025 00:25:38 GMT'
+    },
+    config: {
+      transitional: [Object],
+      adapter: [Array],
+      transformRequest: [Array],
+      transformResponse: [Function: transformResponse],
+      timeout: 0,
+      xsrfCookieName: 'XSRF-TOKEN',
+      xsrfHeaderName: 'X-XSRF-TOKEN',
+      maxContentLength: -1,
+      maxBodyLength: -1,
+      env: [Object],
+      validateStatus: [Function: validateStatus],
+      headers: [Object [AxiosHeaders]],
+      url: 'https://api.mailjet.com/v3.1/send',
+      params: {},
+      data: `{"Messages":[{"From":{"Email":"no-reply@penguinmod.com","Name":"Penguinmod"},"To":[{"Email":"koko@kokodev.cc","Name":"kokofixcomputers"}],"Subject":"Verify your email","TextPart":"PenguinMod Email Verification\\n\\n        ********************\\n        Hello kokofixcomputers!\\n        ********************\\n\\n        You are getting this email as someone has requested to set\\n        this email address as an email for the \\"kokofixcomputers\\" PenguinMod account.\\n\\n        Opening the link below will set this as the email address\\n        for the \\"kokofixcomputers\\" PenguinMod account.\\n\\n        Verify this email:\\n        https://projects.penguinmod.com/api/v1/resetpassword/verifyemail?email=koko@kokodev.cc&state=3c038a01ef25ecde2dbbbb582f9b57122e40e3c0cad18ca345ac63d384b9e396\\n\\n        If you did not request for this to be a PenguinMod account's email,\\n        you can delete this email or ignore it.\\n\\n        Do not forward, share, or reply to this email. Replies will\\n        not be seen or answered.\\n\\n        PenguinMod","HTMLPart":"<!DOCTYPE html PUBLIC \\"-//W3C//DTD HTML 4.0 Transitional//EN\\" \\"http://www.w3.org/TR/REC-html40/loose.dtd\\">\\n        <html><body>\\n        <p style='background-color: #129aeb; color: white; font-size: 48px; font-weight: bold; font-family: \\"Helvetica Neue\\", Arial, sans-serif; padding: 60px 10%;' align=\\"center\\">PenguinMod Email Verification</p>\\n            <h1 style='font-family: \\"Helvetica Neue\\", Arial, sans-serif;'>Hello kokofixcomputers!</h1>\\n            <p style='font-family: \\"Helvetica Neue\\", Arial, sans-serif;'>You are getting this email as someone has requested to set this email address as an email for the &quot;kokofixcomputers&quot; PenguinMod account.</p>\\n            <p style='font-family: \\"Helvetica Neue\\", Arial, sans-serif;'>Opening the link below will set this as the email address for the &quot;kokofixcomputers&quot; PenguinMod account.</p>\\n        <p style='font-family: \\"Helvetica Neue\\", Arial, sans-serif;'><a href=\\"https://projects.penguinmod.com/api/v1/resetpassword/verifyemail?email=koko@kokodev.cc&state=3c038a01ef25ecde2dbbbb582f9b57122e40e3c0cad18ca345ac63d384b9e396\\">Verify this email</a></p>\\n        <br>\\n        <p style='font-family: \\"Helvetica Neue\\", Arial, sans-serif;'>If you did not request for this to be a PenguinMod account's email, you can delete this email or ignore it.</p>\\n            <p style='font-family: \\"Helvetica Neue\\", Arial, sans-serif;'>Do not forward, share, or reply to this email. Replies will not be seen or answered.</p>\\n\\n        <img src=\\"https://penguinmod.com/favicon.png\\" alt=\\"PenguinMod\\" width=\\"64\\" height=\\"64\\" style=\\"width: 64px; height: 64px;\\">\\n        </body></html>"}]}`,
+      method: 'post',
+      responseType: 'json',
+      auth: [Object]
+    },
+    request: ClientRequest {
+      _events: [Object: null prototype],
+      _eventsCount: 7,
+      _maxListeners: undefined,
+      outputData: [],
+      outputSize: 0,
+      writable: true,
+      destroyed: true,
+      _last: false,
+      chunkedEncoding: false,
+      shouldKeepAlive: true,
+      maxRequestsOnConnectionReached: false,
+      _defaultKeepAlive: true,
+      useChunkedEncodingByDefault: true,
+      sendDate: false,
+      _removedConnection: false,
+      _removedContLen: false,
+      _removedTE: false,
+      strictContentLength: false,
+      _contentLength: '2737',
+      _hasBody: true,
+      _trailer: '',
+      finished: true,
+      _headerSent: true,
+      _closed: true,
+      _header: 'POST /v3.1/send HTTP/1.1\r\n' +
+        'Accept: application/json, text/plain, */*\r\n' +
+        'Content-Type: application/json\r\n' +
+        'User-Agent: mailjet-api-v3-nodejs/6.0.6\r\n' +
+        'Content-Length: 2737\r\n' +
+        'Accept-Encoding: gzip, compress, deflate, br\r\n' +
+        'Host: api.mailjet.com\r\n' +
+        'Authorization: Basic YWJjOmRlZg==\r\n' +
+        'Connection: keep-alive\r\n' +
+        '\r\n',
+      _keepAliveTimeout: 0,
+      _onPendingData: [Function: nop],
+      agent: [Agent],
+      socketPath: undefined,
+      method: 'POST',
+      maxHeaderSize: undefined,
+      insecureHTTPParser: undefined,
+      joinDuplicateHeaders: undefined,
+      path: '/v3.1/send',
+      _ended: true,
+      res: [IncomingMessage],
+      aborted: false,
+      timeoutCb: null,
+      upgradeOrConnect: false,
+      parser: null,
+      maxHeadersCount: null,
+      reusedSocket: false,
+      host: 'api.mailjet.com',
+      protocol: 'https:',
+      _redirectable: [Writable],
+      [Symbol(shapeMode)]: false,
+      [Symbol(kCapture)]: false,
+      [Symbol(kBytesWritten)]: 0,
+      [Symbol(kNeedDrain)]: false,
+      [Symbol(corked)]: 0,
+      [Symbol(kChunkedBuffer)]: [],
+      [Symbol(kChunkedLength)]: 0,
+      [Symbol(kSocket)]: [TLSSocket],
+      [Symbol(kOutHeaders)]: [Object: null prototype],
+      [Symbol(errored)]: null,
+      [Symbol(kHighWaterMark)]: 65536,
+      [Symbol(kRejectNonStandardBodyWrites)]: false,
+      [Symbol(kUniqueHeaders)]: null
+    },
+    data: [Object: null prototype] {
+      ErrorIdentifier: 'bff3d938-c068-4d8e-ae03-e9f2c40228db',
+      StatusCode: 401,
+      ErrorMessage: 'API key authentication/authorization failure. You may be unauthorized to access the API or your API key may be expired. Visit API keys management section to check your keys.'
+    }
+  },
+  statusCode: 401,
+  statusText: 'Unauthorized',
+  originalMessage: 'API key authentication/authorization failure. You may be unauthorized to access the API or your API key may be expired. Visit API keys management section to check your keys.',
+  ErrorMessage: 'API key authentication/authorization failure. You may be unauthorized to access the API or your API key may be expired. Visit API keys management section to check your keys.',
+  ErrorIdentifier: 'bff3d938-c068-4d8e-ae03-e9f2c40228db'
+}
+(node:1376670) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+[32mStarting at 3/8/2025, 6:37:09 PM CST...[39m
+[31m[ ERROR ][39m loading endpoint users/meta/setPFP.js: Error: Cannot find module '../build/Release/magic'
+Require stack:
+- /mnt/extendedblock/penguinmod-backendapi/PenguinMod-BackendApi/node_modules/mmmagic/lib/index.js
+- /mnt/extendedblock/penguinmod-backendapi/PenguinMod-BackendApi/api/v1/routes/users/meta/setPFP.js
+- /mnt/extendedblock/penguinmod-backendapi/PenguinMod-BackendApi/api/endpointLoader.js
+- /mnt/extendedblock/penguinmod-backendapi/PenguinMod-BackendApi/index.js
+[31m[ ERROR ][39m loading endpoint users/mod/setPFP.js: Error: Cannot find module '../build/Release/magic'
+Require stack:
+- /mnt/extendedblock/penguinmod-backendapi/PenguinMod-BackendApi/node_modules/mmmagic/lib/index.js
+- /mnt/extendedblock/penguinmod-backendapi/PenguinMod-BackendApi/api/v1/routes/users/mod/setPFP.js
+- /mnt/extendedblock/penguinmod-backendapi/PenguinMod-BackendApi/api/endpointLoader.js
+- /mnt/extendedblock/penguinmod-backendapi/PenguinMod-BackendApi/index.js
+API is listening on port 12026
+(node:1379364) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+[32mStarting at 3/8/2025, 6:39:38 PM CST...[39m
+[31m[ ERROR ][39m loading endpoint users/meta/setPFP.js: Error: Cannot find module '../build/Release/magic'
+Require stack:
+- /mnt/extendedblock/penguinmod-backendapi/PenguinMod-BackendApi/node_modules/mmmagic/lib/index.js
+- /mnt/extendedblock/penguinmod-backendapi/PenguinMod-BackendApi/api/v1/routes/users/meta/setPFP.js
+- /mnt/extendedblock/penguinmod-backendapi/PenguinMod-BackendApi/api/endpointLoader.js
+- /mnt/extendedblock/penguinmod-backendapi/PenguinMod-BackendApi/index.js
+[31m[ ERROR ][39m loading endpoint users/mod/setPFP.js: Error: Cannot find module '../build/Release/magic'
+Require stack:
+- /mnt/extendedblock/penguinmod-backendapi/PenguinMod-BackendApi/node_modules/mmmagic/lib/index.js
+- /mnt/extendedblock/penguinmod-backendapi/PenguinMod-BackendApi/api/v1/routes/users/mod/setPFP.js
+- /mnt/extendedblock/penguinmod-backendapi/PenguinMod-BackendApi/api/endpointLoader.js
+- /mnt/extendedblock/penguinmod-backendapi/PenguinMod-BackendApi/index.js
+API is listening on port 12026
+(node:1382485) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+[32mStarting at 3/8/2025, 6:42:30 PM CST...[39m
+[31m[ ERROR ][39m loading endpoint users/meta/setPFP.js: Error: Cannot find module '../build/Release/magic'
+Require stack:
+- /mnt/extendedblock/penguinmod-backendapi/PenguinMod-BackendApi/node_modules/mmmagic/lib/index.js
+- /mnt/extendedblock/penguinmod-backendapi/PenguinMod-BackendApi/api/v1/routes/users/meta/setPFP.js
+- /mnt/extendedblock/penguinmod-backendapi/PenguinMod-BackendApi/api/endpointLoader.js
+- /mnt/extendedblock/penguinmod-backendapi/PenguinMod-BackendApi/index.js
+[31m[ ERROR ][39m loading endpoint users/mod/setPFP.js: Error: Cannot find module '../build/Release/magic'
+Require stack:
+- /mnt/extendedblock/penguinmod-backendapi/PenguinMod-BackendApi/node_modules/mmmagic/lib/index.js
+- /mnt/extendedblock/penguinmod-backendapi/PenguinMod-BackendApi/api/v1/routes/users/mod/setPFP.js
+- /mnt/extendedblock/penguinmod-backendapi/PenguinMod-BackendApi/api/endpointLoader.js
+- /mnt/extendedblock/penguinmod-backendapi/PenguinMod-BackendApi/index.js
+API is listening on port 12026
+(node:1385181) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+[32mStarting at 3/8/2025, 6:45:04 PM CST...[39m
+[31m[ ERROR ][39m loading endpoint users/meta/setPFP.js: Error: Cannot find module '../build/Release/magic'
+Require stack:
+- /mnt/extendedblock/penguinmod-backendapi/PenguinMod-BackendApi/node_modules/mmmagic/lib/index.js
+- /mnt/extendedblock/penguinmod-backendapi/PenguinMod-BackendApi/api/v1/routes/users/meta/setPFP.js
+- /mnt/extendedblock/penguinmod-backendapi/PenguinMod-BackendApi/api/endpointLoader.js
+- /mnt/extendedblock/penguinmod-backendapi/PenguinMod-BackendApi/index.js
+[31m[ ERROR ][39m loading endpoint users/mod/setPFP.js: Error: Cannot find module '../build/Release/magic'
+Require stack:
+- /mnt/extendedblock/penguinmod-backendapi/PenguinMod-BackendApi/node_modules/mmmagic/lib/index.js
+- /mnt/extendedblock/penguinmod-backendapi/PenguinMod-BackendApi/api/v1/routes/users/mod/setPFP.js
+- /mnt/extendedblock/penguinmod-backendapi/PenguinMod-BackendApi/api/endpointLoader.js
+- /mnt/extendedblock/penguinmod-backendapi/PenguinMod-BackendApi/index.js
+API is listening on port 12026
+(node:1390232) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+[32mStarting at 3/8/2025, 6:49:50 PM CST...[39m
+[31m[ ERROR ][39m loading endpoint users/meta/setPFP.js: Error: Cannot find module '../build/Release/magic'
+Require stack:
+- /mnt/extendedblock/penguinmod-backendapi/PenguinMod-BackendApi/node_modules/mmmagic/lib/index.js
+- /mnt/extendedblock/penguinmod-backendapi/PenguinMod-BackendApi/api/v1/routes/users/meta/setPFP.js
+- /mnt/extendedblock/penguinmod-backendapi/PenguinMod-BackendApi/api/endpointLoader.js
+- /mnt/extendedblock/penguinmod-backendapi/PenguinMod-BackendApi/index.js
+[31m[ ERROR ][39m loading endpoint users/mod/setPFP.js: Error: Cannot find module '../build/Release/magic'
+Require stack:
+- /mnt/extendedblock/penguinmod-backendapi/PenguinMod-BackendApi/node_modules/mmmagic/lib/index.js
+- /mnt/extendedblock/penguinmod-backendapi/PenguinMod-BackendApi/api/v1/routes/users/mod/setPFP.js
+- /mnt/extendedblock/penguinmod-backendapi/PenguinMod-BackendApi/api/endpointLoader.js
+- /mnt/extendedblock/penguinmod-backendapi/PenguinMod-BackendApi/index.js
+API is listening on port 12026
