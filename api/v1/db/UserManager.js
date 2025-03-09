@@ -3670,7 +3670,7 @@ class UserManager {
                 Messages: [
                     {
                         "From": {
-                        "Email": "koko@kokodev.cc",
+                        "Email": "orangemod.noreply@kokodev.cc",
                         "Name": "Orangemod"
                         },
                         "To": [
